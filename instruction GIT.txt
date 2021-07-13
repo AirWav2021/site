@@ -1,0 +1,75 @@
+=============================================================================================================
+Для того чтобы с локального репозитория перенести файлы в репозиторий Github требуется выполнить шаги:
+1. Зарегистрировать аккаунт на сайте https://github.com/ 
+и создать новый репозиторий на github
+
+2. Качаем GIT: 
+https://git-scm.com
+a) создаём папку командой mkdir test, а затем командой cd test перейдём в репозиторий с названием test
+b) командой ls проверяем какие файлы лежат в этой папке
+c) командой git init создаём пустой репозиторий, и проверим командой ls -a файлы в репозитории
+
+2. Генерируем SSH ключ в Git Bush командой: ssh-keygen
+далее попросит ввести passphrase жмём 2 раза enter
+с помощью блокнота или же команды cat и путь до ключа id_rsa.pub открыть и скопировать ключ!!!
+a) перейти на сайт github в раздел settings и в разделе SSH and GPG keys
+b) нажать кнопку new SSH key и вводим содержимое ключа id_rsa.pub и жмём кнопку add SSH key,
+подтверждаем пароль от github
+ 
+3. Выбираем из списка свой репозиторий и Клонируем репозиторий с Github: командой git clone (ссылка сайта SSH)
+4. устанавливаем первоначальные конфигурации
+git config --global user.name 'имя_пользователя_github'
+git config --global user.email 'ваша_электронная_почта'
+git config --global color.diff 'auto'
+git config --global color.status 'auto'
+git config --global color.branch 'auto'
+git config --global credential.helper store
+git config --global push.default simple
+git config --global core.autocrlf false
+git config --global core.eol lf
+git config --list проверяем информацию которую ввели ранее
+
+далее: с помощью команды git status проверяем статус, и git remote -v проверяем соеденение с github
+
+Обновляем изменения:
+5. git add . производится индексирование всех файлов на предмет изменения в них
+6. git commit -m "update" фиксируем публикацию, комментируем изменения
+7. git push -f отправляем на сервер GitHub все файлы!
+============================================================================================================
+Создаём новую ветку под названием test
+git checkout -b test
+touch test.md
+echo "Hello World" > test.md
+git add test.md
+git commit -m 'first test commit'
+git push -u origin test загружаем в репозиторий github данную ветку
+============================================================================================================
+Загрузка изменений с github
+git pull
+
+Основные команды терминала Git:
+1. cd - переход в начало директории
+2. mkdir создание директории
+3. touch создание пустого файла, либо touch index.html создание файла index.html
+4. ls проверить файлы папки
+5. cp копировать файлы или папки пример: cp index.html index_copy.html
+6. mv переместить и переименовать файл test.txt test_original.txt
+7. echo "" > test.txt добавить текст в файл test.txt
+8. cat test.txt прочитать файл test.txt
+9. rm удаление файла навсегда пример: rm test.txt восстановлению он не подлежит
+10. rm -R назавние директории, команда удаляет директорию с файлами
+11. git status проверить статус
+12. git commit добавить вручую коммит в файл
+13. git commit -am 'сообщение к коммиту'
+14. git commit -m 'сообщение к коммиту'
+15. .gitkeep создать скрытые системные файлы, например touch images/.gitkeep
+
+16. // правило игнорирования файлов
+.gitignore создать правило игнорирования пример: 
+touch .gitignore создаём 
+git add .gitignore добавляем в индекс
+echo "config" > .gitignore записываем название файла
+git commit -am 'ignore set up' затем попытаемся создать файл который лежит в игноре
+touch config создаём файл 
+ls смотрим файлы
+git status в статусе видно что этот файл игнорируется
