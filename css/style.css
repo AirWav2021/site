@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+summary {
+  display: block;
+}
+
+::-webkit-details-marker {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -83,7 +91,7 @@ button {
   height: 75px;
 }
 .header .nav-wraper {
-  display: block;
+  display: none;
   position: absolute;
   top: 75px;
   width: 100%;
@@ -560,4 +568,86 @@ button {
 }
 .footer .bottom-line .socials-icons .item:hover {
   background-color: #ff6a6a;
+}
+
+.context {
+  min-height: 148px;
+  background-color: #f8f3f4;
+  display: flex;
+  align-items: center;
+}
+.context .context-in {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 100%;
+}
+.context .context-title {
+  line-height: 28.8px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #f16d7f;
+}
+.context .link,
+.context .delimiter {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #636363;
+}
+.context .active {
+  font-weight: 700;
+  color: #f16d7f;
+}
+
+.catalog {
+  margin: 51px auto 64px auto;
+}
+.catalog .sort {
+  display: flex;
+  max-width: 670px;
+  justify-content: flex-start;
+  margin: 16px;
+}
+.catalog .sort .main-filter {
+  flex: 0 56%;
+  text-align: left;
+}
+.catalog .sort .main-filter svg {
+  margin-left: 10px;
+}
+.catalog .sort .main-filter .filter-1 {
+  font-weight: 600;
+}
+.catalog .sort .filter {
+  margin-right: 13px;
+  font-weight: 400;
+}
+.catalog .sort .fa-chevron-down {
+  margin-left: 10px;
+}
+.catalog .sort .filter-icon path {
+  fill: #222224;
+}
+
+.pagination {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  border: 1px solid #ebebeb;
+  width: 33%;
+  padding: 12px 41px;
+  margin-top: 20px;
+}
+
+li a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #c4c4c4;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+i {
+  color: #222224;
 }/*# sourceMappingURL=style.css.map */

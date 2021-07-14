@@ -16,7 +16,15 @@ $bgcd: #f8f8f8;
 $f-text: #fbfbfb;
 $input: #e1e1e1;
 $fe-desc: #5d5d5d;
+$context: #f8f3f4;
+$context-link: #636363;
 
+summary {
+   display: block;
+}
+::-webkit-details-marker {
+   display: none;
+}
 * {
    margin: 0;
    padding: 0;
@@ -101,7 +109,7 @@ button {
    background-color: $header;
    height: 75px;
    .nav-wraper {
-      display: block;
+      display: none;
       position: absolute;
       top: 75px;
       width: 100%;
@@ -594,3 +602,89 @@ button {
       }
    }
 }
+
+// Catalog page
+
+.context {
+   min-height: 148px;
+   background-color: $context;
+   display: flex;
+   align-items: center;
+   .context-in {
+      display: flex;
+      justify-content: space-between;
+      flex: 1 100%;
+   }
+   .context-title {
+      line-height: 28.8px;
+      font-size: 24px;
+      font-weight: 400;
+      color: $desc;
+   }
+   .link,
+   .delimiter {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16.8px;
+      color: $context-link;
+   }
+   .active {
+      font-weight: 700;
+      color: $desc;
+   }
+}
+
+.catalog {
+   margin: 51px auto 64px auto;
+   .sort {
+      display: flex;
+      max-width: 670px;
+      justify-content: flex-start;
+      margin: 16px;
+      .main-filter {
+         flex: 0 56%;
+         text-align: left;
+         svg {
+            margin-left: 10px;
+         }
+         .filter-1 {
+            font-weight: 600;
+         }
+      }
+      .filter {
+         margin-right: 13px;
+         font-weight: 400;
+      }
+      .fa-chevron-down {
+         margin-left: 10px;
+      }
+      .filter-icon path {
+         fill: $feature;
+      }
+   }
+}
+
+.pagination {
+   display: flex;
+   margin: 0 auto;
+   justify-content: center;
+   border: 1px solid #ebebeb;
+   width: 33%;
+   padding: 12px 41px;
+   margin-top: 20px;
+}
+li a {
+   color: black;
+   padding: 8px 16px;
+   text-decoration: none;
+   color: #c4c4c4;
+   font-size: 16px;
+   font-weight: 300;
+}
+i {
+   color: $feature;
+}
+// details[open] {
+//    padding: 0.5em;
+//    background-color: $desc;
+// }
