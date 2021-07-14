@@ -35,6 +35,15 @@ ol {
 .container {
    max-width: 1140px;
    margin: 0 auto;
+   // padding: 0px calc(50% - 1140px / 2);
+}
+
+.hidden {
+   visibility: hidden;
+   position: absolute;
+   left: -999999px;
+   width: 1px;
+   height: 1px;
 }
 
 .wrapper {
@@ -42,6 +51,11 @@ ol {
    display: flex;
    flex-direction: column;
    min-height: 100vh;
+}
+
+html {
+   font-size: 14px;
+   font-weight: 300;
 }
 
 .main {
@@ -54,6 +68,13 @@ body {
    min-width: 320px;
    background: $body;
    line-height: 1.5;
+}
+
+button {
+   border: 0;
+   background: none;
+   cursor: pointer;
+   font-size: 14px;
 }
 
 .overlay {
@@ -238,6 +259,10 @@ body {
 .rectangle {
    padding: 0;
    margin-top: 65px;
+   .category-title {
+      text-align: center;
+      margin-bottom: 30px;
+   }
 }
 
 .r-cards {
@@ -250,6 +275,30 @@ body {
       position: relative;
       width: 360px;
       height: 260px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      &.r-card-1 {
+         background-image: url(../img/r-card-1.png);
+      }
+      &.r-card-2 {
+         background-image: url(../img/r-card-2.png);
+      }
+      &.r-card-3 {
+         background-image: url(../img/r-card-3.png);
+      }
+      &.r-card-4 {
+         background-image: url(../img/rectangle-bg.png);
+         min-height: 180px;
+         margin-top: 30px;
+         position: relative;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex: 1 100%;
+      }
 
       &::before {
          content: "";
@@ -262,8 +311,9 @@ body {
          opacity: 1;
       }
 
-      .link {
+      .card-item {
          position: absolute;
+         z-index: 2;
          display: flex;
          top: 40%;
          left: 0;
@@ -275,55 +325,13 @@ body {
          align-items: center;
       }
 
-      span {
+      .card-title {
          font-size: 24px;
          text-transform: uppercase;
          color: $desc;
          display: block;
          font-weight: 700;
       }
-   }
-}
-
-.accesories {
-   background-image: url(../img/rectangle-bg.png);
-   min-height: 180px;
-   margin-top: 30px;
-   position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex: 1 100%;
-   .card-title {
-      z-index: 2;
-      position: absolute;
-   }
-   .as-title {
-      z-index: 1;
-      text-align: center;
-      line-height: 1.6;
-   }
-   h2 {
-      font-size: 16px;
-      color: #fff;
-      font-weight: 400;
-   }
-   span {
-      font-size: 24px;
-      text-transform: uppercase;
-      color: $desc;
-      display: block;
-      font-weight: 700;
-   }
-   &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: $dark-overlay;
-      opacity: 1;
    }
 }
 
@@ -342,8 +350,7 @@ body {
       margin: 48px auto;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
-      align-content: center;
+      align-items: flex-start;
       .fe-card {
          width: 360px;
          margin-bottom: 30px;
@@ -521,13 +528,14 @@ body {
          border-radius: 20px 0 0 20px;
          padding: 7px 64px 7px 22px;
       }
-      .r-side {
+      .btn {
          background-color: $desc;
          border: none;
          width: 100px;
          min-height: 49px;
          border-radius: 0 20px 20px 0;
          color: $body;
+         cursor: pointer;
       }
    }
    .bottom-line {

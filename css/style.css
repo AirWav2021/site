@@ -19,11 +19,24 @@ ol {
   margin: 0 auto;
 }
 
+.hidden {
+  visibility: hidden;
+  position: absolute;
+  left: -999999px;
+  width: 1px;
+  height: 1px;
+}
+
 .wrapper {
   overflow: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+html {
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .main {
@@ -36,6 +49,13 @@ body {
   min-width: 320px;
   background: #ffffff;
   line-height: 1.5;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .overlay {
@@ -215,6 +235,10 @@ body {
   padding: 0;
   margin-top: 65px;
 }
+.rectangle .category-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
 .r-cards {
   display: flex;
@@ -226,6 +250,30 @@ body {
   position: relative;
   width: 360px;
   height: 260px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.r-cards .r-card.r-card-1 {
+  background-image: url(../img/r-card-1.png);
+}
+.r-cards .r-card.r-card-2 {
+  background-image: url(../img/r-card-2.png);
+}
+.r-cards .r-card.r-card-3 {
+  background-image: url(../img/r-card-3.png);
+}
+.r-cards .r-card.r-card-4 {
+  background-image: url(../img/rectangle-bg.png);
+  min-height: 180px;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 100%;
 }
 .r-cards .r-card::before {
   content: "";
@@ -237,8 +285,9 @@ body {
   background: rgba(0, 0, 0, 0.6);
   opacity: 1;
 }
-.r-cards .r-card .link {
+.r-cards .r-card .card-item {
   position: absolute;
+  z-index: 2;
   display: flex;
   top: 40%;
   left: 0;
@@ -249,54 +298,12 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.r-cards .r-card span {
+.r-cards .r-card .card-title {
   font-size: 24px;
   text-transform: uppercase;
   color: #f16d7f;
   display: block;
   font-weight: 700;
-}
-
-.accesories {
-  background-image: url(../img/rectangle-bg.png);
-  min-height: 180px;
-  margin-top: 30px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1 100%;
-}
-.accesories .card-title {
-  z-index: 2;
-  position: absolute;
-}
-.accesories .as-title {
-  z-index: 1;
-  text-align: center;
-  line-height: 1.6;
-}
-.accesories h2 {
-  font-size: 16px;
-  color: #fff;
-  font-weight: 400;
-}
-.accesories span {
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #f16d7f;
-  display: block;
-  font-weight: 700;
-}
-.accesories::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 1;
 }
 
 .fetured {
@@ -315,8 +322,7 @@ body {
   margin: 48px auto;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  align-content: center;
+  align-items: flex-start;
 }
 .fetured .fe-cards .fe-card {
   width: 360px;
@@ -491,13 +497,14 @@ body {
   border-radius: 20px 0 0 20px;
   padding: 7px 64px 7px 22px;
 }
-.footer .send .r-side {
+.footer .send .btn {
   background-color: #f16d7f;
   border: none;
   width: 100px;
   min-height: 49px;
   border-radius: 0 20px 20px 0;
   color: #ffffff;
+  cursor: pointer;
 }
 .footer .bottom-line {
   background-color: #222224;
