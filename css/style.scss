@@ -212,6 +212,13 @@ button {
 }
 .preview {
    background-color: $title;
+   position: relative;
+   video {
+      position: absolute;
+      width: 100%;
+      height: 764px;
+      object-fit: cover;
+   }
 }
 
 .title {
@@ -220,6 +227,7 @@ button {
    .title-image,
    .heading-title {
       flex-basis: 50%;
+      position: relative;
    }
    .main-title {
       color: $header;
