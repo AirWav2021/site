@@ -512,7 +512,7 @@ button {
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding-top: 50px;
 }
 .footer .subscribe-info .sub-wrapper .sub-title,
