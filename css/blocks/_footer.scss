@@ -1,0 +1,107 @@
+// Футер
+.footer {
+   &__inner {
+      background-image: url(../img/subscribe-bg.png);
+      background-repeat: no-repeat;
+      min-height: 448px;
+      background-size: cover;
+      position: relative;
+      background-position: bottom center;
+   }
+   &__items {
+      z-index: 2;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-top: 56px;
+   }
+   &__item {
+      flex: 0 360px;
+      text-align: center;
+   }
+   &__quote {
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 20px;
+      line-height: 24px;
+   }
+   &__contact {
+      margin-top: 64px;
+      margin-right: 80px;
+   }
+   &__title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 40px;
+   }
+   &__descr {
+      font-size: 18px;
+      line-height: 40px;
+      font-weight: 400;
+      color: $feature;
+   }
+
+   &__send {
+      display: flex;
+      padding-top: 44px;
+   }
+
+   &__input {
+      background-color: $input;
+      border: none;
+      width: 256px;
+      min-height: 49px;
+      border-radius: 25px 0 0 25px;
+      padding: 7px 64px 7px 22px;
+   }
+
+   &__btn {
+      background-color: $desc;
+      border: none;
+      width: 100px;
+      min-height: 49px;
+      border-radius: 0 25px 25px 0;
+      color: $body;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 400;
+   }
+}
+
+.bottom-line {
+   &__inner {
+      background-color: $feature;
+      padding: 23px 0;
+   }
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+   }
+   &__copyright {
+      color: $f-text;
+   }
+   &__socials-icons {
+      display: flex;
+   }
+   &__item {
+      margin-right: 7px;
+      text-align: center;
+      background-color: $body;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s ease;
+      &:hover {
+         background-color: $button;
+         cursor: pointer;
+      }
+      &:hover .bottom-line__icon {
+         color: $body;
+         transition: all 0.5s ease;
+      }
+   }
+}
