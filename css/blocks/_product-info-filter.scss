@@ -1,0 +1,133 @@
+.product-info,
+.filter {
+   &__inner {
+      text-align: center;
+      position: relative;
+      background: #fff;
+      margin-top: -65px;
+      border: 1px solid #eaeaea;
+   }
+
+   &__title {
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 17px;
+      color: #f16d7f;
+      font-weight: 300;
+      padding-top: 64px;
+   }
+
+   &__sort {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__sort-content {
+      margin-right: 22px;
+   }
+
+   &__arrow {
+      margin-left: 9px;
+   }
+
+   &__line {
+      width: 63px;
+      height: 3px;
+      background-color: $pag-color;
+      border: none;
+      margin: 12px auto;
+   }
+
+   &__text {
+      font-size: 18px;
+      text-transform: uppercase;
+      line-height: 22px;
+      color: $text;
+   }
+
+   &__desc {
+      max-width: 555px;
+      width: 100%;
+      color: #5e5e5e;
+      margin: 48px auto 32px auto;
+      line-height: 16px;
+   }
+
+   &__long-line {
+      border-bottom: 1px solid #eaeaea;
+      border-radius: 30px;
+      margin: 65px auto;
+      max-width: 640px;
+   }
+
+   &__price {
+      font-size: 24px;
+      line-height: 28px;
+      color: $pag-color;
+   }
+
+   &__btn {
+      display: flex;
+      border: 1px solid #f16d7f;
+      width: 212px;
+      padding: 12px;
+      transition: all 0.5s ease;
+      color: #f26376;
+      align-items: center;
+      justify-content: center;
+      margin: 48px auto 64px auto;
+   }
+   &__icon-cart {
+      fill: $button;
+      transition: all 0.5s ease;
+      margin-right: 22px;
+   }
+
+   &__filter-text {
+      font-weight: 600;
+      font-size: 14px;
+   }
+
+   &__icon-filter {
+      fill: #000;
+      margin-left: 11px;
+   }
+}
+
+.filter {
+   &__inner {
+      border: 0;
+      margin: 51px auto 64px auto;
+   }
+
+   &__sort {
+      display: flex;
+      justify-content: space-between;
+      max-width: 670px;
+   }
+
+   &__filter-text {
+      font-weight: 600;
+      font-size: 14px;
+   }
+
+   &__icon-filter {
+      fill: #000;
+      margin-left: 11px;
+   }
+
+   &__side {
+      display: flex;
+   }
+}
+
+.product-info__btn {
+   &:hover {
+      background-color: $button;
+      color: $body;
+   }
+   &:hover .product-info__btn-icon-cart {
+      fill: $body;
+      transition: all 0.5s ease;
+   }
+}

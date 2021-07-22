@@ -1,0 +1,37 @@
+.breadcrumb {
+   min-height: 148px;
+   background-color: $context;
+   display: flex;
+   align-items: center;
+
+   &__content {
+      display: flex;
+      justify-content: space-between;
+      flex: 1 100%;
+   }
+
+   &__title {
+      line-height: 28.8px;
+      font-size: 24px;
+      font-weight: 400;
+      color: $desc;
+   }
+
+   &__link {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16.8px;
+      color: $context-link;
+   }
+   &__link--active {
+      font-weight: 700;
+      color: $desc;
+   }
+}
+
+.breadcrumb {
+   &__link:not(:first-child):before {
+      content: "/";
+      margin: 0 5px;
+   }
+}

@@ -1,0 +1,122 @@
+.products {
+   &__inner {
+      margin-top: 128px;
+   }
+
+   &__main-title {
+      color: $fe-title;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 36px;
+      text-align: center;
+   }
+
+   &__description {
+      font-size: 14px;
+      line-height: 17px;
+      color: $products-description;
+      text-align: center;
+      margin-top: 6px;
+      margin-bottom: 48px;
+      font-weight: 400;
+   }
+
+   &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+   }
+
+   &__item {
+      width: 360px;
+      margin-bottom: 30px;
+      margin-right: 30px;
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      cursor: pointer;
+      &:hover .products__overlay {
+         opacity: 1;
+      }
+   }
+
+   &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 420px;
+      background: $dark-overlay;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: 0.5s;
+   }
+
+   &__img {
+      height: 420px;
+      transition: all 0.5s ease;
+   }
+
+   &__btn {
+      opacity: 1;
+      transition: all 0.5s ease;
+      position: relative;
+      font-size: 14px;
+      left: 0;
+      z-index: 1;
+      color: #fff;
+      border: 1px solid;
+      display: flex;
+      font-size: 14px;
+      width: 143px;
+      height: 43px;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__icon-cart {
+      margin-right: 11px;
+   }
+
+   &__content-title {
+      background: $bgcd;
+      text-align: left;
+      padding: 25px 28px 20px 16px;
+      position: relative;
+      overflow: hidden;
+   }
+
+   &__title {
+      margin-bottom: 12px;
+      font-weight: 400;
+      line-height: 15.6px;
+      font-size: 13px;
+   }
+   &__item:nth-child(3n) {
+      margin-right: 0;
+   }
+
+   &__descr {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16.8px;
+      color: $fe-desc;
+   }
+
+   &__price {
+      margin-top: 18px;
+      display: block;
+      color: #f16d7f;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.2px;
+   }
+
+   &__catalog-inner {
+      margin-top: 0;
+   }
+}
