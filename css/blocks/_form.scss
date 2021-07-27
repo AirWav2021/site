@@ -14,7 +14,7 @@
       margin-bottom: 20px;
    }
 
-   &__input {
+   &__field {
       min-height: 45px;
       margin-bottom: 20px;
       padding-left: 17px;
@@ -33,8 +33,29 @@
       color: #4a4a4a;
       padding: 12px 0px;
       text-align: center;
-      border: 1px solid rgba(164, 164, 164, 1);
+      outline: 1px solid rgba(164, 164, 164, 1);
       width: 100px;
+   }
+
+   &__desc {
+      color: #b1b1b1;
+      font-size: 13px;
+   }
+
+   &__select {
+      width: 17px;
+      height: 17px;
+      margin-right: 10px;
+      vertical-align: text-top;
+   }
+
+   label {
+      margin-right: 20px;
+   }
+
+   &__fields {
+      margin-top: 13px;
+      margin-bottom: 30px;
    }
 }
 
@@ -70,6 +91,7 @@
    }
 
    &__btn {
+      border: 0;
       margin: 0 auto;
       display: block;
       font-weight: 300;
@@ -79,6 +101,13 @@
       background-color: $desc;
       padding: 16px 37px;
       margin-top: 17px;
+      transition: all 0.5s ease;
+      cursor: pointer;
+      &:hover {
+         background-color: #ffffff;
+         color: #f16d7f;
+         outline: 1px solid #f16d7f;
+      }
    }
 
    &__line {

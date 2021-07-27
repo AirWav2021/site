@@ -23,7 +23,7 @@ ol {
    max-width: 1140px;
    margin: 0 auto;
    width: 100%;
-   // padding: 0px calc(50% - 1140px / 2);
+   // padding: 0 calc(50% - 1140px / 2);
 }
 
 .hidden {
@@ -35,7 +35,6 @@ ol {
 }
 
 .wrapper {
-   overflow: hidden;
    display: flex;
    flex-direction: column;
    min-height: 100vh;
@@ -59,7 +58,7 @@ body {
 }
 
 button {
-   border: 0;
+   border: none;
    background: none;
    cursor: pointer;
    font-size: 14px;

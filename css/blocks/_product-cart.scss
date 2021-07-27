@@ -17,10 +17,6 @@
       margin-bottom: 40px;
    }
 
-   &__img {
-      max-width: 262px;
-   }
-
    &__buttons {
       display: flex;
       justify-content: space-between;
@@ -29,16 +25,18 @@
    }
 
    &__btn {
-      justify-content: space-between;
-      border: 1px solid rgba(164, 164, 164, 1);
-      padding: 17px 40px;
+      display: block;
+      padding: 16px 0;
+      text-align: center;
       font-family: "Lato", sans-serif;
+      margin: 0;
+      min-width: 235px;
    }
 
    &__right-side {
       width: 100%;
       max-width: 390px;
-      padding: 22px 22px 62px 31px;
+      padding: 22px 22px 40px 31px;
    }
 
    &__name-wrap {
