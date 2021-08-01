@@ -1,0 +1,109 @@
+.header {
+   &__inner {
+      padding: 19px 0;
+      background-color: $header;
+      height: 75px;
+   }
+
+   &__topline {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+   }
+
+   &__topline-left {
+      display: flex;
+      align-items: center;
+   }
+
+   &__topline-right-link {
+      margin-left: 33px;
+      @include media("max", "xs") {
+         display: none;
+      }
+   }
+
+   &__search-btn {
+      margin-left: 41px;
+   }
+
+   &__topline-right {
+      display: flex;
+      align-items: flex-end;
+   }
+
+   &__menu {
+      border: 0;
+      background: none;
+   }
+
+   &__menu-line {
+      width: 32px;
+      display: block;
+      margin: 8px 0;
+      border: 1px solid #fff;
+   }
+   &__menu-content {
+      right: -500px;
+      opacity: 0;
+      position: fixed;
+      background: #fff;
+      z-index: 999;
+      min-width: 232px;
+      min-height: 764px;
+      top: 75px;
+      padding: 16px 17px 16px 33px;
+      display: flex;
+      flex-direction: column;
+      transition-property: all;
+      transition-duration: 0.5s;
+      transition-timing-function: cubic-bezier(0.09, 0.29, 0.34, 0.85);
+      transition-delay: 0s;
+      box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+   }
+
+   &__menu-content.open {
+      right: 0;
+      opacity: 1;
+      transition: 0.5s;
+   }
+   &__close {
+      cursor: pointer;
+      width: 17px;
+      align-self: flex-end;
+      transition: 2s;
+   }
+
+   &__title {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      margin-top: 9px;
+      margin-bottom: 24px;
+   }
+
+   &__sub-title {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: $desc;
+      margin-bottom: 12px;
+   }
+
+   &__menu-list {
+      margin-bottom: 20px;
+   }
+
+   &__menu-item {
+      padding-left: 20px;
+      margin-bottom: 12px;
+   }
+
+   &__menu-link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: $menu-link;
+   }
+}
