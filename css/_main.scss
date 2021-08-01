@@ -23,7 +23,11 @@ ol {
    max-width: 1140px;
    margin: 0 auto;
    width: 100%;
-   // padding: 0 calc(50% - 1140px / 2);
+   // max-width: calc(1140px - 16px * 2);
+   @include media("max", "sm") {
+      max-width: 768px;
+      padding: 0 16px;
+   }
 }
 
 .hidden {

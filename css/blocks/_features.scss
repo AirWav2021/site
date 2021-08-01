@@ -4,6 +4,15 @@
       background: $feature;
       padding: 100px;
       min-height: 341px;
+      @include media("max", "sm") {
+         margin-top: 65px;
+         min-height: 601px;
+         padding: 0;
+         padding-top: 48px;
+      }
+      @include media("max", "xs") {
+         margin-top: 96px;
+      }
    }
 
    &__items {
@@ -12,12 +21,19 @@
       justify-content: center;
       align-items: center;
       align-content: center;
+      @include media("max", "sm") {
+         display: block;
+      }
    }
 
    &__item {
-      flex: 1 360px;
+      flex: 0 360px;
       text-align: center;
       margin-right: 30px;
+      @include media("max", "sm") {
+         margin: 0 auto 48px auto;
+         max-width: 360px;
+      }
    }
 
    &__img {

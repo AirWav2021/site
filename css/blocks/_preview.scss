@@ -2,35 +2,67 @@
    &__inner {
       background-color: $title;
       position: relative;
+      @include media("max", "sm") {
+         min-height: 368px;
+      }
+      @include media("max", "xs") {
+         min-height: 363px;
+      }
    }
    &__video {
       position: absolute;
       width: 100%;
-      height: 764px;
+      min-height: 764px;
+      max-height: 764px;
       object-fit: cover;
+      @include media("max", "sm") {
+         display: none;
+      }
+      @include media("max", "sm") {
+         min-height: 368px;
+         max-height: 368px;
+      }
    }
    &__content {
       display: flex;
+      justify-content: space-between;
+      @include media("max", "sm") {
+         align-items: center;
+      }
+      @include media("max", "xs") {
+         min-height: 368px;
+         justify-content: center;
+      }
    }
 
    &__img {
       background-image: url(../img/bg-preview.png);
       background-repeat: no-repeat;
       min-height: 764px;
-      background-size: cover;
-      background-position: 95%;
+      background-size: contain;
+      -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      width: 380px;
+      @include media("max", "sm") {
+         background-image: url(../img/bg-preview-tablet.png);
+         min-height: 368px;
+         max-height: 368px;
+         background-position: 50%;
+         background-size: cover;
+      }
+      @include media("max", "xs") {
+         display: none;
+      }
    }
 
    &__img,
    &__heading-title {
-      flex-basis: 50%;
       position: relative;
    }
 
    &__title {
       color: $header;
-      width: 377px;
+      max-width: 377px;
       font-family: Lato;
       font-style: normal;
       font-weight: 900;
@@ -38,9 +70,21 @@
       text-transform: uppercase;
       line-height: 38.4px;
       position: relative;
-      margin-left: 91px;
       margin-top: 290px;
       animation: focus-in-contract-bck 3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      @include media("max", "sm") {
+         margin: 0 auto;
+         font-size: 44px;
+         margin-left: 39px;
+         width: 311px;
+         padding-left: 15px;
+         height: 100%;
+      }
+      @include media("max", "xs") {
+         font-size: 38px;
+         width: 246px;
+         padding-left: 8px;
+      }
       &:before {
          content: "";
          position: absolute;
@@ -58,6 +102,12 @@
       font-size: 32px;
       font-weight: 700;
       display: inline-block;
+      @include media("max", "sm") {
+         font-size: 24px;
+      }
+      @include media("max", "xs") {
+         font-size: 20px;
+      }
    }
    &__desc--pink {
       color: $desc;

@@ -1,0 +1,15 @@
+$sizes: (
+   "xs": 576px,
+   "sm": 769px,
+   "lg": 1201px,
+);
+
+@mixin media($minmax, $media) {
+   @each $size, $resolution in $sizes {
+      @if $media == $size {
+         @media all and (#{$minmax}-width: $resolution) {
+            @content;
+         }
+      }
+   }
+}

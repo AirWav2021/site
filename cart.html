@@ -41,7 +41,7 @@
                   <img class="header__close" src="img/close.svg" alt="close">
                   <p class="header__title">MENU</p>
                   <ul class="header__menu-list">
-                     <p class="header__sub-title">MAN</p>
+                     <li class="header__sub-title">MAN</li>
                      <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
                      <li class="header__menu-item"> <a class="header__menu-link" href="#">Poslání, cíle, fakta</a></li>
                      <li class="header__menu-item"> <a class="header__menu-link" href="#">Denim</a></li>
@@ -82,7 +82,7 @@
                   <div class="product-cart__cards">
                      <div class="product-cart__card-wrap">
                         <div class="product-cart__card">
-                           <img class="product-cart__img" width="262px" height="306px" src="img/fe-card-3.png"
+                           <img class="product-cart__img" width="262" height="306" src="img/fe-card-3.png"
                               alt="img-cart">
                            <div class="product-cart__right-side">
                               <div class="product-cart__name-wrap">
@@ -106,13 +106,15 @@
                                  <li class="product-cart__item product-cart__item-size">Size: <span
                                        class="product-cart__item-text">Xl</span></li>
                                  <li class="product-cart__item product-cart__item-quantity">Quantity:</li>
-                                 <input class="product-cart__item product-cart__item-num" type="number" value="1"
-                                    min="1" max="10">
+                                 <li>
+                                    <input class="product-cart__item product-cart__item-num" type="number" value="1"
+                                       min="1" max="10">
+                                 </li>
                               </ul>
                            </div>
                         </div>
                         <div class="product-cart__card">
-                           <img class="product-cart__img" width="262px" height="306px" src="img/fe-card-7.png"
+                           <img class="product-cart__img" width="262" height="306" src="img/fe-card-7.png"
                               alt="img-cart">
                            <div class="product-cart__right-side">
                               <div class="product-cart__name-wrap">
@@ -136,8 +138,10 @@
                                  <li class="product-cart__item product-cart__item-size">Size: <span
                                        class="product-cart__item-text">Xl</span></li>
                                  <li class="product-cart__item product-cart__item-quantity">Quantity:</li>
-                                 <input class="product-cart__item product-cart__item-num" type="number" value="1"
-                                    min="1" max="10">
+                                 <li>
+                                    <input class="product-cart__item product-cart__item-num" type="number" value="1"
+                                       min="1" max="10">
+                                 </li>
                               </ul>
                            </div>
                         </div>
@@ -147,11 +151,11 @@
                         <button class="product-info__btn product-cart__btn">CONTINUE SHOPPING</button>
                      </div>
                   </div>
-                  <form class="form" action="">
+                  <form class="form" action="#">
                      <div class="form__inner">
                         <p class="form__text">SHIPPING ADRESS</p>
                         <input class="form__field" type="text" placeholder="Bangladesh">
-                        <input class="form__field" type="text" name="" placeholder="State">
+                        <input class="form__field" type="text" placeholder="State">
                         <input class="form__field" type="text" placeholder="Postcode / Zip">
                         <input class="form__btn" type="submit" value="GET A QUOTE">
                      </div>
@@ -230,6 +234,9 @@
          </div>
       </div>
    </footer>
+   <div class="callback">
+      <i class="callback__phone fas fa-phone"></i>
+   </div>
    <script src="js/main.js"></script>
    <script src="https://kit.fontawesome.com/28aa9b1bb7.js" crossorigin="anonymous"></script>
 </body>

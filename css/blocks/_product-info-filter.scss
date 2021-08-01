@@ -75,6 +75,9 @@
       align-items: center;
       justify-content: center;
       margin: 48px auto 64px auto;
+      @include media("max", "sm") {
+         margin-top: 16px;
+      }
    }
    &__icon-cart {
       fill: $button;

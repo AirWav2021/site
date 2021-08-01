@@ -19,6 +19,9 @@
 
    &__topline-right-link {
       margin-left: 33px;
+      @include media("max", "xs") {
+         display: none;
+      }
    }
 
    &__search-btn {

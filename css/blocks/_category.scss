@@ -1,6 +1,12 @@
 .category {
    &__inner {
-      margin-top: 65px;
+      margin-top: 64px;
+      @include media("max", "sm") {
+         margin-top: 20px;
+      }
+      @include media("max", "xs") {
+         margin-top: 64px;
+      }
    }
 
    &__heading {
@@ -20,23 +26,44 @@
    &__item-wrap {
       position: relative;
       overflow: hidden;
+      width: 31.6%;
+      min-height: 260px;
+      @include media("max", "sm") {
+         min-height: 167px;
+      }
+      @include media("max", "xs") {
+         width: 100%;
+         margin: 0 auto 30px auto;
+         height: 243px;
+      }
       &--item-accesories {
          width: 100%;
          margin-top: 30px;
+         min-height: 180px;
+         @include media("max", "sm") {
+            min-height: 116px;
+         }
+         @include media("max", "xs") {
+            max-height: 111px;
+            margin-top: 0;
+            min-height: 111px;
+         }
       }
    }
 
    &__item {
       padding: 0;
       position: relative;
-      width: 360px;
-      height: 260px;
+      height: 100%;
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
       flex-direction: column;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       transition: 0.5s;
       &:hover {
          transform: scale(1.2);
@@ -49,6 +76,13 @@
       &:hover .category__title {
          transform: scale(1);
          color: $body;
+      }
+      @include media("max", "xs") {
+         margin-bottom: 32px;
+         min-height: 243px;
+         &:hover {
+            transform: scale(1.1);
+         }
       }
    }
    &__item-women {
@@ -69,6 +103,13 @@
       justify-content: center;
       align-items: center;
       width: 100%;
+      @include media("max", "sm") {
+         max-height: 116px;
+      }
+      @include media("max", "xs") {
+         min-height: 111px;
+         margin-top: 0;
+      }
    }
 
    .category__item:before {
