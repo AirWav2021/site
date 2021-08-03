@@ -1,7 +1,8 @@
 $sizes: (
    "xs": 576px,
-   "sm": 769px,
-   "lg": 1201px,
+   "tablet": 752px,
+   "sm": 780px,
+   "lp": 1140px,
 );
 
 @mixin media($minmax, $media) {

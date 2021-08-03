@@ -28,6 +28,9 @@ ol {
       max-width: 768px;
       padding: 0 16px;
    }
+   @include media("max", "xs") {
+      padding: 0 8px;
+   }
 }
 
 .hidden {
@@ -41,24 +44,24 @@ ol {
 .wrapper {
    display: flex;
    flex-direction: column;
-   min-height: 100vh;
+   // min-height: 100vh;
+   min-height: 100%;
 }
 
-html {
+.main {
+   flex: 1 1 auto;
+}
+
+html,
+body {
    font-size: 14px;
    font-weight: 300;
    font-family: "Lato", sans-serif;
    height: 100%;
-}
-
-.main {
-   flex-grow: 1;
-}
-
-body {
-   min-width: 320px;
+   min-width: 375px;
    background: $body;
    line-height: 1.6;
+   box-sizing: border-box;
 }
 
 button {

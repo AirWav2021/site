@@ -3,6 +3,8 @@
       margin-top: 96px;
       display: flex;
       justify-content: space-between;
+      min-height: 774px;
+      flex-wrap: wrap;
    }
 
    &__cards {

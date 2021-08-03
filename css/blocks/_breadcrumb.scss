@@ -3,11 +3,16 @@
    background-color: $context;
    display: flex;
    align-items: center;
+   margin-top: 75px;
 
    &__content {
       display: flex;
       justify-content: space-between;
-      flex: 1 100%;
+      @include media("max", "xs") {
+         justify-content: center;
+         flex-direction: column;
+         text-align: center;
+      }
    }
 
    &__title {
@@ -15,6 +20,9 @@
       font-size: 24px;
       font-weight: 400;
       color: $desc;
+      @include media("max", "xs") {
+         margin-bottom: 32px;
+      }
    }
 
    &__link {

@@ -2,6 +2,7 @@
    &__inner {
       background-color: $title;
       position: relative;
+      padding-top: 75px;
       @include media("max", "sm") {
          min-height: 368px;
       }

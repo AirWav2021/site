@@ -6,6 +6,9 @@
       background: #fff;
       margin-top: -65px;
       border: 1px solid #eaeaea;
+      @include media("max", "sm") {
+         margin-top: 0;
+      }
    }
 
    &__title {
@@ -14,15 +17,29 @@
       color: #f16d7f;
       font-weight: 300;
       padding-top: 24px;
+      @include media("max", "sm") {
+         padding-top: 64px;
+      }
    }
 
    &__sort {
       display: flex;
-      justify-content: center;
-   }
-
-   &__sort-content {
-      margin-right: 22px;
+      justify-content: space-between;
+      max-width: 370px;
+      margin-bottom: 48px;
+      &--center {
+         margin: 0 auto;
+         margin-bottom: 48px;
+         @include media("max", "xs") {
+            padding-bottom: 64px;
+            & summary {
+               font-size: 12px;
+            }
+         }
+         & svg {
+            margin-left: 11px;
+         }
+      }
    }
 
    &__arrow {
@@ -105,6 +122,7 @@
    &__sort-toggle {
       position: relative;
       box-sizing: border-box;
+      max-width: 360px;
       &[open] > summary {
          color: $pag-color;
          outline: none;
@@ -115,10 +133,24 @@
       }
    }
 
+   &__sort-content {
+      & svg {
+         margin-left: 11px;
+      }
+   }
+
+   &__side {
+      max-width: 296px;
+      width: 100%;
+   }
+
    &__filter-text {
       margin-left: 16px;
       position: relative;
       z-index: 9999;
+      @include media("max", "xs") {
+         margin-left: 0;
+      }
    }
 
    &__content {
@@ -167,21 +199,37 @@
    &__sort {
       display: flex;
       justify-content: space-between;
-      max-width: 704px;
+      max-width: 685px;
+      @include media("max", "sm") {
+         max-width: 736px;
+      }
    }
 
    &__filter-text {
       font-weight: 600;
       font-size: 14px;
+      @include media("max", "sm") {
+         margin: 0;
+      }
+   }
+
+   &__filter-descr {
+      @include media("max", "xs") {
+         display: none;
+      }
    }
 
    &__icon-filter {
       fill: #000;
       margin-left: 11px;
+      @include media("max", "xs") {
+         margin-left: 0;
+      }
    }
 
    &__side {
       display: flex;
+      justify-content: space-between;
    }
 }
 
