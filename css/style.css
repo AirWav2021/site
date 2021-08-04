@@ -1391,6 +1391,7 @@ i {
   .product-info__inner,
 .filter__inner {
     margin-top: 0;
+    border: 0;
   }
 }
 .product-info__title,

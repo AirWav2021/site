@@ -8,6 +8,7 @@
       border: 1px solid #eaeaea;
       @include media("max", "sm") {
          margin-top: 0;
+         border: 0;
       }
    }
 
