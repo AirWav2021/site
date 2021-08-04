@@ -17,11 +17,13 @@
                <div class="header__topline">
                   <div class="header__topline-left">
                      <a class="logo" href="index.html">
-                        <img class="logo__link" src="img/logo.svg" alt="logo">
+                        <img class="header__logo" src="img/logo.svg" alt="logo">
                      </a>
                      <button class="header__search-btn">
-                        <img class="header__search-img" src="img/search.svg" alt="search">
-                     </button>
+                        <img class="header__search-img" src="img/search.svg" alt="search"></button>
+                     <form class="header__search" action="form">
+                        <input class="header__search-field" type="search" placeholder="Search....">
+                     </form>
                   </div>
                   <div class="header__topline-right">
                      <button class="header__menu">
@@ -29,11 +31,12 @@
                         <span class="header__menu-line"></span>
                         <span class="header__menu-line"></span>
                      </button>
-                     <a class="header__topline-right-link" href="#">
+                     <a class="header__topline-right-link" href="registration.html">
                         <img class="header__topline-img" src="img/social.svg" alt="social">
                      </a>
-                     <a class="header__topline-right-link" href="#">
+                     <a class="header__topline-right-link" href="cart.html">
                         <img src="img/cart.svg" alt="cart" class="cart">
+                        <div class="header__topline-right-count">1</div>
                      </a>
                   </div>
                </div>
@@ -41,9 +44,7 @@
                   <img class="header__close" src="img/close.svg" alt="close">
                   <p class="header__title">MENU</p>
                   <ul class="header__menu-list">
-                     <li>
-                        <p class="header__sub-title">MAN</p>
-                     </li>
+                     <li class="header__sub-title">MAN</li>
                      <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
                      <li class="header__menu-item"> <a class="header__menu-link" href="#">Poslání, cíle, fakta</a></li>
                      <li class="header__menu-item"> <a class="header__menu-link" href="#">Denim</a></li>
@@ -78,11 +79,11 @@
                </div>
             </div>
          </section>
-         <section class="registration sub-content">
+         <section class="registration">
             <div class="container">
                <div class="registration__inner">
-                  <form class="form" action="#">
-                     <div class="form__inner">
+                  <form class="form registration__form" action="#">
+                     <div class="form__inner registration__inner--wide">
                         <p class="form__text">Your Name</p>
                         <input class="form__field" type="text" placeholder="First Name">
                         <input class="form__field" type="text" placeholder="Last Name">

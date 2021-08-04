@@ -4,6 +4,10 @@
    display: flex;
    align-items: center;
    margin-top: 75px;
+   padding: 0 16px;
+   @include media("max", "sm") {
+      padding: 0;
+   }
 
    &__content {
       display: flex;

@@ -12,16 +12,78 @@
 <body>
    <div class="wrapper">
       <header class="header">
+         <nav class="header__menu-content">
+            <img class="header__close" src="img/close.svg" alt="close">
+            <p class="header__title">MENU</p>
+            <ul class="header__menu-list">
+               <li class="header__sub-title">MAN</li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Poslání, cíle, fakta</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Denim</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
+            </ul>
+            <p class="header__sub-title">WOMAN</p>
+            <ul class="header__menu-list">
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Jackets & Coats</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Polos</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
+            </ul>
+            <p class="header__sub-title">KIDS</p>
+            <ul class="header__menu-list">
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Jackets & Coats</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Polos</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
+            </ul>
+            <ul class="header__menu-list">
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Jackets & Coats</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Polos</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
+            </ul>
+            <p class="header__sub-title">KIDS</p>
+            <ul class="header__menu-list">
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Jackets & Coats</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Polos</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
+            </ul>
+            <ul class="header__menu-list">
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Jackets & Coats</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Polos</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
+            </ul>
+            <p class="header__sub-title">KIDS</p>
+            <ul class="header__menu-list">
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Jackets & Coats</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Polos</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
+            </ul>
+         </nav>
          <div class="header__inner">
             <div class="container">
                <div class="header__topline">
                   <div class="header__topline-left">
                      <a class="logo" href="index.html">
-                        <img class="logo__link" src="img/logo.svg" alt="logo">
+                        <img class="header__logo" src="img/logo.svg" alt="logo">
                      </a>
                      <button class="header__search-btn">
-                        <img class="header__search-img" src="img/search.svg" alt="search">
-                     </button>
+                        <img class="header__search-img" src="img/search.svg" alt="search"></button>
+                     <form class="header__search" action="form">
+                        <input class="header__search-field" type="search" placeholder="Search....">
+                     </form>
                   </div>
                   <div class="header__topline-right">
                      <button class="header__menu">
@@ -29,47 +91,20 @@
                         <span class="header__menu-line"></span>
                         <span class="header__menu-line"></span>
                      </button>
-                     <a class="header__topline-right-link" href="#">
+                     <a class="header__topline-right-link" href="registration.html">
                         <img class="header__topline-img" src="img/social.svg" alt="social">
                      </a>
-                     <a class="header__topline-right-link" href="#">
+                     <a class="header__topline-right-link" href="cart.html">
                         <img src="img/cart.svg" alt="cart" class="cart">
+                        <div class="header__topline-right-count">1</div>
                      </a>
                   </div>
                </div>
-               <nav class="header__menu-content">
-                  <img class="header__close" src="img/close.svg" alt="close">
-                  <p class="header__title">MENU</p>
-                  <ul class="header__menu-list">
-                     <li>
-                        <p class="header__sub-title">MAN</p>
-                     </li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Poslání, cíle, fakta</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Denim</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
-                  </ul>
-                  <p class="header__sub-title">WOMAN</p>
-                  <ul class="header__menu-list">
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Jackets & Coats</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Polos</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
-                  </ul>
-                  <p class="header__sub-title">KIDS</p>
-                  <ul class="header__menu-list">
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Jackets & Coats</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Polos</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
-                  </ul>
-               </nav>
+
             </div>
          </div>
       </header>
+
       <main class="main">
          <section class="breadcrumb">
             <div class="container">
@@ -89,8 +124,7 @@
                   <details class="filter__sort-toggle">
                      <summary class="filter__filter-text filter__sort-content"><span
                            class="filter__filter-descr">FILTER</span>
-                        <svg class="filter__icon-filter" width="15" height="10" viewBox="0 0 15 10"
-                           xmlns="http://www.w3.org/2000/svg">
+                        <svg class="filter__icon-filter" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
                            <path
                               d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
                         </svg>
@@ -157,6 +191,22 @@
                                  fill="#6F6E6E"></path>
                            </svg>
                         </summary>
+                        <div class="filter__content filter__content--small">
+                           <div class="filter__list filter__small-list">
+                              <label><input type="checkbox">
+                                 <span class="filter__link">Bags</span>
+                              </label>
+                              <label><input type="checkbox">
+                                 <span class="filter__link">Denim</span>
+                              </label>
+                              <label><input type="checkbox">
+                                 <span class="filter__link">Shoes</span>
+                              </label>
+                              <label><input type="checkbox">
+                                 <span class="filter__link">Polos</span>
+                              </label>
+                           </div>
+                        </div>
                      </details>
                      <details class="sort-toggle filter__sort-toggle">
                         <summary class="sort-content filter__sort-content">SIZE
@@ -191,6 +241,22 @@
                                  fill="#6F6E6E"></path>
                            </svg>
                         </summary>
+                        <div class="filter__content filter__content--small">
+                           <div class="filter__list filter__small-list">
+                              <label><input type="checkbox">
+                                 <span class="filter__link">10%</span>
+                              </label>
+                              <label><input type="checkbox">
+                                 <span class="filter__link">30%</span>
+                              </label>
+                              <label><input type="checkbox">
+                                 <span class="filter__link">50%</span>
+                              </label>
+                              <label><input type="checkbox">
+                                 <span class="filter__link">100%</span>
+                              </label>
+                           </div>
+                        </div>
                      </details>
                   </div>
                </div>

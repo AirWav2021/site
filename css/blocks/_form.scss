@@ -1,10 +1,36 @@
 .form {
    width: 100%;
    max-width: 360px;
+   @include media("max", "md") {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      @include media("max", "sm") {
+         justify-content: space-between;
+      }
+      @include media("max", "xs") {
+         display: block;
+         margin: 0 auto;
+      }
+   }
    &__inner {
       display: flex;
       flex-direction: column;
       margin-top: 17px;
+      @include media("max", "md") {
+         margin-top: 0;
+         width: 100%;
+         max-width: 360px;
+         margin-bottom: 128px;
+      }
+      @include media("max", "sm") {
+         margin-right: 15px;
+      }
+      @include media("max", "xs") {
+         margin-right: 0;
+         margin: auto;
+      }
    }
    &__text {
       font-weight: 300;
@@ -22,6 +48,8 @@
       font-size: 13px;
       line-height: 16px;
       color: #b1b1b1;
+      border: 0;
+      outline: 1px solid #a4a4a4;
       &:focus {
          opacity: 0.5;
       }
@@ -35,6 +63,8 @@
       text-align: center;
       outline: 1px solid rgba(164, 164, 164, 1);
       width: 100px;
+      background-color: $body;
+      border: 0;
    }
 
    &__desc {
@@ -60,12 +90,27 @@
 }
 
 .sub-content {
+   @include media("max", "md") {
+      width: 100%;
+      max-width: 360px;
+      @include media("max", "xs") {
+         width: 100%;
+         max-width: 360px;
+         margin: 0 auto;
+      }
+   }
    &__inner {
       min-height: 214px;
       background-color: #f5f3f3;
       padding: 39px 30px;
       margin-top: 73px;
       position: relative;
+      @include media("max", "md") {
+         margin-top: 39px;
+      }
+      @include media("max", "xs") {
+         margin-bottom: 96px;
+      }
    }
    &__sub {
       text-align: right;

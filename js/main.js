@@ -10,8 +10,8 @@
 //       item.classList.add('active')
 //    })
 // })
-const menu = document.querySelector(".header__search");
-const button = document.querySelector(".header__search-btn");
+// const menu = document.querySelector(".header__search");
+// const button = document.querySelector(".header__search-btn");
 
 // window.addEventListener('click', function (e) {
 //    document.querySelector(".header__search-btn").onclick = function () {
@@ -22,12 +22,37 @@ const button = document.querySelector(".header__search-btn");
 //       }
 
 
-//SEARCH
-document.querySelector(".header__search-btn").onclick = function () {
-   document.querySelector(".header__search").classList.toggle("open");
-   document.querySelector(".header__search-field").classList.toggle("open");
-   this.classList.remove("open");
+// //SEARCH
+// document.querySelector(".header__search-btn").onclick = function () {
+//    document.querySelector(".header__search").classList.toggle("open");
+//    document.querySelector(".header__search-field").classList.toggle("open");
+//    this.classList.remove("open");
+// }
+
+let search_btn = document.querySelector('.header__search-btn');
+let search = document.querySelector('.header__search');
+
+const toggleMenu = () => {
+   search.classList.toggle('open');
 }
+
+search_btn.addEventListener('click', e => {
+   e.stopPropagation();
+
+   toggleMenu();
+});
+
+// document.addEventListener('click', e => {
+//    let target = e.target;
+//    let its_search = target == search || search.contains(target);
+//    let its_search_btn = target == search_btn;
+//    let search_btn_is_active = search.classList.contains('active');
+
+//    if (!its_search && !its_search_btn && search_btn_is_active) {
+//       toggleMenu();
+//    }
+// })
+
 
 
 
