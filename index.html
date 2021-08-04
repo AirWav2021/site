@@ -16,12 +16,14 @@
             <div class="container">
                <div class="header__topline">
                   <div class="header__topline-left">
-                     <a class="logo" href="#">
-                        <img class="logo__link" src="img/logo.svg" alt="logo">
+                     <a class="logo" href="index.html">
+                        <img class="header__logo" src="img/logo.svg" alt="logo">
                      </a>
                      <button class="header__search-btn">
-                        <img class="header__search-img" src="img/search.svg" alt="search">
-                     </button>
+                        <img class="header__search-img" src="img/search.svg" alt="search"></button>
+                     <form class="header__search" action="form">
+                        <input class="header__search-field" type="search" placeholder="Search....">
+                     </form>
                   </div>
                   <div class="header__topline-right">
                      <button class="header__menu">
@@ -29,51 +31,43 @@
                         <span class="header__menu-line"></span>
                         <span class="header__menu-line"></span>
                      </button>
-                     <a class="header__topline-right-link" href="#">
+                     <a class="header__topline-right-link" href="registration.html">
                         <img class="header__topline-img" src="img/social.svg" alt="social">
                      </a>
-                     <a class="header__topline-right-link" href="#">
+                     <a class="header__topline-right-link" href="cart.html">
                         <img src="img/cart.svg" alt="cart" class="cart">
+                        <div class="header__topline-right-count">1</div>
                      </a>
                   </div>
                </div>
-               <!-- <div class="nav-wraper">
-                  <nav class="header_nav_container">
-                     <div id="menu" class="horizontal-dropdown">
-                        <img class="close" src="img/close.svg" alt="close">
-                        <h2>MENU</h2>
-                        <ul class="menu-accordion" id="accordion">
-                           <li class="submenu"> <a href="#">MAN</a>
-                              <ul>
-                                 <li> <a href="#">Accessories</a></li>
-                                 <li> <a href="#">Poslání, cíle, fakta</a></li>
-                                 <li> <a href="#">Denim</a></li>
-                                 <li> <a href="#">T-Shirts</a></li>
-                              </ul>
-                           </li>
-                           <li class="submenu"> <a href="#">WOMAN</a>
-                              <ul>
-                                 <li> <a href="#">Accessories</a></li>
-                                 <li> <a href="#">Jackets & Coats</a></li>
-                                 <li> <a href="#">Polos</a></li>
-                                 <li> <a href="#">T-Shirts</a></li><br>
-                                 <li> <a href="#">Shirts</a></li>
-                              </ul>
-                           </li>
-                           <li class="submenu  link"> <a href="#">KIDS</a>
-                              <ul>
-                                 <li> <a href="#">Accessories</a></li>
-                                 <li> <a href="#">Jackets & Coats</a></li>
-                                 <li> <a href="#">Polos</a></li>
-                                 <li> <a href="#">T-Shirts</a></li><br>
-                                 <li> <a href="#">Shirts</a></li><br>
-                                 <li> <a href="#">Shirts</a></li>
-                              </ul>
-                           </li>
-                        </ul>
-                     </div>
-                  </nav>
-               </div> -->
+               <nav class="header__menu-content">
+                  <img class="header__close" src="img/close.svg" alt="close">
+                  <p class="header__title">MENU</p>
+                  <ul class="header__menu-list">
+                     <li class="header__sub-title">MAN</li>
+                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
+                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Poslání, cíle, fakta</a></li>
+                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Denim</a></li>
+                     <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
+                  </ul>
+                  <p class="header__sub-title">WOMAN</p>
+                  <ul class="header__menu-list">
+                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
+                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Jackets & Coats</a></li>
+                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Polos</a></li>
+                     <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
+                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
+                  </ul>
+                  <p class="header__sub-title">KIDS</p>
+                  <ul class="header__menu-list">
+                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
+                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Jackets & Coats</a></li>
+                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Polos</a></li>
+                     <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
+                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
+                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
+                  </ul>
+               </nav>
             </div>
          </div>
       </header>
@@ -93,31 +87,35 @@
                </div>
             </div>
          </section>
-         <section class="rectangle container">
-            <h2 class="hidden category-title">Категория товаров</h2>
-            <div class="r-cards">
-               <div class="r-card r-card-1">
-                  <div class="card-item">
-                     <p class="card-text">30% OFF</p>
-                     <h3 class="card-title">FOR WOMEN</h3>
-                  </div>
-               </div>
-               <div class="r-card r-card-2">
-                  <div class="card-item">
-                     <p class="card-text">HOT DEAL</p>
-                     <h3 class="card-title">FOR MEN</h3>
-                  </div>
-               </div>
-               <div class="r-card r-card-3">
-                  <div class="card-item">
-                     <p class="card-text">NEW ARRIVALS</p>
-                     <h3 class="card-title">FOR KIDS</h3>
-                  </div>
-               </div>
-               <div class="r-card r-card-4">
-                  <div class="card-item">
-                     <p class="card-text">LUXIROUS & TRENDY</p>
-                     <h3 class="card-title">ACCESORIES</h3>
+         <section class="category">
+            <div class="category__inner">
+               <div class="container">
+                  <h2 class="category__heading category__heading hidden">Категория товаров</h2>
+                  <div class="category__items">
+                     <div class="category__item-wrap">
+                        <div class="category__item category__item-women">
+                           <p class="category__text">30% OFF</p>
+                           <h3 class="category__title">FOR WOMEN</h3>
+                        </div>
+                     </div>
+                     <div class="category__item-wrap">
+                        <div class="category__item category__item-men">
+                           <p class="category__text">HOT DEAL</p>
+                           <h3 class="category__title">FOR MEN</h3>
+                        </div>
+                     </div>
+                     <div class="category__item-wrap">
+                        <div class="category__item category__item-kids">
+                           <p class="category__text">NEW ARRIVALS</p>
+                           <h3 class="category__title">FOR KIDS</h3>
+                        </div>
+                     </div>
+                     <div class="category__item-wrap category__item-wrap--item-accesories">
+                        <div class="category__item category__item-accesories">
+                           <p class="category__text">LUXIROUS & TRENDY</p>
+                           <h3 class="category__title">ACCESORIES</h3>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -125,11 +123,12 @@
          <section class="products">
             <div class="products__inner">
                <div class="container">
-                  <h2 class="products__main-title products__main-title--hidden">Fetured Items</h2>
+                  <h2 class="products__main-title">Fetured Items</h2>
+                  <p class="products__description">Shop for items based on what we featured in this week</p>
                   <div class="products__items">
                      <article class="products__item">
                         <div class="products__img">
-                           <img class="img" src="img/fe-card-1.png" alt="product">
+                           <img class="products__img-card" src="img/fe-card-1.png" alt="product">
                            <div class="products__overlay">
                               <button class="products__btn">
                                  <img class="products__icon-cart" src="img/icon-cart.svg" alt="icon-cart">Add to Cart
@@ -148,7 +147,7 @@
                      </article>
                      <article class="products__item">
                         <div class="products__img">
-                           <img class="img" src="img/fe-card-2.png" alt="product">
+                           <img class="products__img-card" src="img/fe-card-2.png" alt="product">
                            <div class="products__overlay">
                               <button class="products__btn">
                                  <img class="products__icon-cart" src="img/icon-cart.svg" alt="icon-cart">Add to Cart
@@ -167,7 +166,7 @@
                      </article>
                      <article class="products__item">
                         <div class="products__img">
-                           <img class="img" src="img/fe-card-3.png" alt="product">
+                           <img class="products__img-card" src="img/fe-card-3.png" alt="product">
                            <div class="products__overlay">
                               <button class="products__btn">
                                  <img class="products__icon-cart" src="img/icon-cart.svg" alt="icon-cart">Add to Cart
@@ -186,7 +185,7 @@
                      </article>
                      <article class="products__item">
                         <div class="products__img">
-                           <img class="img" src="img/fe-card-4.png" alt="product">
+                           <img class="products__img-card" src="img/fe-card-4.png" alt="product">
                            <div class="products__overlay">
                               <button class="products__btn">
                                  <img class="products__icon-cart" src="img/icon-cart.svg" alt="icon-cart">Add to Cart
@@ -205,7 +204,7 @@
                      </article>
                      <article class="products__item">
                         <div class="products__img">
-                           <img class="img" src="img/fe-card-5.png" alt="product">
+                           <img class="products__img-card" src="img/fe-card-5.png" alt="product">
                            <div class="products__overlay">
                               <button class="products__btn">
                                  <img class="products__icon-cart" src="img/icon-cart.svg" alt="icon-cart">Add to Cart
@@ -224,7 +223,7 @@
                      </article>
                      <article class="products__item">
                         <div class="products__img">
-                           <img class="img" src="img/fe-card-6.png" alt="product">
+                           <img class="products__img-card" src="img/fe-card-6.png" alt="product">
                            <div class="products__overlay">
                               <button class="products__btn">
                                  <img class="products__icon-cart" src="img/icon-cart.svg" alt="icon-cart">Add to Cart
@@ -242,8 +241,8 @@
                         </div>
                      </article>
                   </div>
-                  <button class="btn product-info__btn">
-                     Browse All Product</button>
+                  <button class="btn product-info__btn product-info__btn--white-text">
+                     <a class="product-info__link--white" href="catalog.html">Browse All Product</a></button>
                </div>
             </div>
          </section>
@@ -349,6 +348,10 @@
          </div>
       </div>
    </footer>
+   <div class="callback">
+      <i class="callback__phone fas fa-phone"></i>
+   </div>
+   <script src="js/main.js"></script>
    <script src="https://kit.fontawesome.com/28aa9b1bb7.js" crossorigin="anonymous"></script>
 </body>
 
