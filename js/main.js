@@ -29,17 +29,28 @@
 //    this.classList.remove("open");
 // }
 
+"use strict";
+
+// MOBILE MENU   
+document.querySelector(".header__menu").onclick = function () {
+   document.querySelector(".header__menu-content").classList.toggle("open");
+}
+
+document.querySelector(".header__close").onclick = function () {
+   document.querySelector(".header__menu-content").classList.remove("open");
+}
+
 let search_btn = document.querySelector('.header__search-btn');
 let search = document.querySelector('.header__search');
 
-const toggleMenu = () => {
+const toggleSearch = () => {
    search.classList.toggle('open');
 }
 
 search_btn.addEventListener('click', e => {
    e.stopPropagation();
 
-   toggleMenu();
+   toggleSearch();
 });
 
 // document.addEventListener('click', e => {
@@ -55,17 +66,6 @@ search_btn.addEventListener('click', e => {
 
 
 
-
-
-
-// MOBILE MENU   
-document.querySelector(".header__menu").onclick = function () {
-   document.querySelector(".header__menu-content").classList.add("open");
-}
-
-document.querySelector(".header__close").onclick = function () {
-   document.querySelector(".header__menu-content").classList.remove("open");
-}
 
 // const menu = Array.from(document.querySelectorAll('.header__menu'));
 // const triggers = Array.from(document.querySelectorAll('.header__menu-content'));

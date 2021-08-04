@@ -12,6 +12,34 @@
 <body>
    <div class="wrapper">
       <header class="header">
+         <nav class="header__menu-content">
+            <img class="header__close" src="img/close.svg" alt="close">
+            <p class="header__title">MENU</p>
+            <ul class="header__menu-list">
+               <li class="header__sub-title">MAN</li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Poslání, cíle, fakta</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Denim</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
+            </ul>
+            <p class="header__sub-title">WOMAN</p>
+            <ul class="header__menu-list">
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Jackets & Coats</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Polos</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
+            </ul>
+            <p class="header__sub-title">KIDS</p>
+            <ul class="header__menu-list">
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Jackets & Coats</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Polos</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
+               <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
+            </ul>
+         </nav>
          <div class="header__inner">
             <div class="container">
                <div class="header__topline">
@@ -40,34 +68,7 @@
                      </a>
                   </div>
                </div>
-               <nav class="header__menu-content">
-                  <img class="header__close" src="img/close.svg" alt="close">
-                  <p class="header__title">MENU</p>
-                  <ul class="header__menu-list">
-                     <li class="header__sub-title">MAN</li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Poslání, cíle, fakta</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Denim</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
-                  </ul>
-                  <p class="header__sub-title">WOMAN</p>
-                  <ul class="header__menu-list">
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Jackets & Coats</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Polos</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
-                  </ul>
-                  <p class="header__sub-title">KIDS</p>
-                  <ul class="header__menu-list">
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Accessories</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Jackets & Coats</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Polos</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">T-Shirts</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
-                     <li class="header__menu-item"> <a class="header__menu-link" href="#">Shirts</a></li>
-                  </ul>
-               </nav>
+
             </div>
          </div>
       </header>
@@ -155,10 +156,10 @@
                   <form class="form" action="#">
                      <div class="form__inner">
                         <p class="form__text">SHIPPING ADRESS</p>
-                        <input class="form__field" type="text" placeholder="Bangladesh">
-                        <input class="form__field" type="text" placeholder="State">
-                        <input class="form__field" type="text" placeholder="Postcode / Zip">
-                        <input class="form__btn" type="submit" value="GET A QUOTE">
+                        <input class="form__field" type="text" placeholder="Bangladesh" required>
+                        <input class="form__field" type="text" placeholder="State" required>
+                        <input class="form__field" type="text" placeholder="Postcode / Zip" required>
+                        <input class="form__btn" type="submit" value="GET A QUOTE" required>
                      </div>
                      <div class="sub-content">
                         <div class="sub-content__inner">
@@ -193,8 +194,8 @@
                <h5 class="footer__title">SUBSCRIBE</h5>
                <p class="footer__descr">FOR OUR NEWLETTER AND PROMOTION</p>
                <form class="footer__send">
-                  <input class="footer__input" type="email" placeholder="Enter Your Email">
-                  <input class="footer__btn" type="submit" value="Subscribe">
+                  <input class="footer__input" type="email" placeholder="Enter Your Email" required>
+                  <input class="footer__btn" type="submit" value="Subscribe" required>
                </form>
             </div>
          </div>

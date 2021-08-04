@@ -134,7 +134,7 @@
    &__menu-content {
       right: 0;
       opacity: 0;
-      position: absolute;
+      position: fixed;
       background: $body;
       z-index: 99999;
       min-width: 232px;
@@ -152,6 +152,7 @@
       transform: scaleX(0);
       @include media("max", "xs") {
          width: 100%;
+         position: absolute;
       }
    }
 
