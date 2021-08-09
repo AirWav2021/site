@@ -706,16 +706,16 @@ button {
   }
 }
 .category__item-women {
-  background-image: url(../img/r-card-1.png);
+  background-image: url(../img/r-card-1.jpg);
 }
 .category__item-men {
-  background-image: url(../img/r-card-2.png);
+  background-image: url(../img/r-card-2.jpg);
 }
 .category__item-kids {
-  background-image: url(../img/r-card-3.png);
+  background-image: url(../img/r-card-3.jpg);
 }
 .category__item-accesories {
-  background-image: url(../img/rectangle-bg.png);
+  background-image: url(../img/rectangle-bg.jpg);
   max-height: 180px;
   position: relative;
   display: flex;
@@ -1055,7 +1055,7 @@ button {
 }
 
 .footer__inner {
-  background-image: url(../img/subscribe-bg.png);
+  background-image: url(../img/subscribe-bg.jpg);
   background-repeat: no-repeat;
   min-height: 448px;
   background-size: cover;
